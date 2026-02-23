@@ -1,16 +1,16 @@
 import 'dart:async';
 
-import 'package:adjust_sdk/src/models/adjust_ad_revenue.dart';
-import 'package:adjust_sdk/src/models/adjust_app_store_subscription.dart';
-import 'package:adjust_sdk/src/models/adjust_app_store_purchase.dart';
-import 'package:adjust_sdk/src/models/responses/adjust_attribution.dart';
-import 'package:adjust_sdk/src/config/adjust_config.dart';
-import 'package:adjust_sdk/src/models/adjust_event.dart';
-import 'package:adjust_sdk/src/models/adjust_play_store_purchase.dart';
-import 'package:adjust_sdk/src/models/adjust_play_store_subscription.dart';
-import 'package:adjust_sdk/src/models/responses/adjust_purchase_verification_result.dart';
-import 'package:adjust_sdk/src/models/adjust_third_party_sharing.dart';
-import 'package:adjust_sdk/src/models/adjust_deeplink.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/adjust_ad_revenue.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/adjust_app_store_subscription.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/adjust_app_store_purchase.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/responses/adjust_attribution.dart';
+import 'package:adjust_ia_sdk_flutter/src/config/adjust_config.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/adjust_event.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/adjust_play_store_purchase.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/adjust_play_store_subscription.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/responses/adjust_purchase_verification_result.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/adjust_third_party_sharing.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/adjust_deeplink.dart';
 
 import 'package:flutter/services.dart';
 import 'package:meta/meta.dart';

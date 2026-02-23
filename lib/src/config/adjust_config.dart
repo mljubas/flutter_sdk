@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:adjust_sdk/src/models/responses/adjust_attribution.dart';
-import 'package:adjust_sdk/src/models/responses/adjust_event_failure.dart';
-import 'package:adjust_sdk/src/models/responses/adjust_event_success.dart';
-import 'package:adjust_sdk/src/models/responses/adjust_session_failure.dart';
-import 'package:adjust_sdk/src/models/responses/adjust_session_success.dart';
-import 'package:adjust_sdk/src/models/adjust_store_info.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/responses/adjust_attribution.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/responses/adjust_event_failure.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/responses/adjust_event_success.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/responses/adjust_session_failure.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/responses/adjust_session_success.dart';
+import 'package:adjust_ia_sdk_flutter/src/models/adjust_store_info.dart';
 import 'package:flutter/services.dart';
 
 /// The verbosity of SDK log output.

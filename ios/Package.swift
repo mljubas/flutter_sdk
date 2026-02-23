@@ -2,12 +2,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "adjust_sdk",
+    name: "adjust_ia_sdk_flutter",
     platforms: [
         .iOS(.v12),
     ],
     products: [
-        .library(name: "adjust-sdk", targets: ["adjust_sdk"]),
+        .library(name: "adjust-ia-sdk-flutter", targets: ["adjust_ia_sdk_flutter"]),
     ],
     dependencies: [
         .package(
@@ -17,7 +17,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "adjust_sdk",
+            name: "adjust_ia_sdk_flutter",
             dependencies: [
                 .product(name: "Adjust", package: "ios_sdk"),
             ],

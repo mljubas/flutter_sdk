@@ -1,4 +1,4 @@
-import 'package:adjust_sdk/adjust_sdk.dart';
+import 'package:adjust_ia_sdk_flutter/adjust_ia_sdk_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  adjust_sdk:
+  adjust_ia_sdk_flutter:
     path: ../
 
 dependency_overrides:
