@@ -1,11 +1,4 @@
-import 'package:adjust_sdk/adjust.dart';
-import 'package:adjust_sdk/adjust_attribution.dart';
-import 'package:adjust_sdk/adjust_config.dart';
-import 'package:adjust_sdk/adjust_event.dart';
-import 'package:adjust_sdk/adjust_event_failure.dart';
-import 'package:adjust_sdk/adjust_event_success.dart';
-import 'package:adjust_sdk/adjust_session_failure.dart';
-import 'package:adjust_sdk/adjust_session_success.dart';
+import 'package:adjust_sdk/adjust_sdk.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -294,7 +287,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
           width: 80,
           height: 80,
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.1),
+            color: Colors.white.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(16),
           ),
           child: const Icon(
@@ -320,7 +313,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 16,
-            color: Colors.white.withOpacity(0.8),
+            color: Colors.white.withValues(alpha: 0.8),
             height: 1.4,
           ),
         ),
@@ -339,7 +332,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         Text(
           'Initializing Adjust SDK...',
           style: TextStyle(
-            color: Colors.white.withOpacity(0.8),
+            color: Colors.white.withValues(alpha: 0.8),
             fontSize: 16,
           ),
         ),
@@ -422,7 +415,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
             borderRadius: BorderRadius.circular(28),
           ),
           elevation: 8,
-          shadowColor: Colors.black.withOpacity(0.3),
+          shadowColor: Colors.black.withValues(alpha: 0.3),
         ),
       ),
     );

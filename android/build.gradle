@@ -1,6 +1,7 @@
 group 'com.adjust.sdk.flutter'
 version '1.0-SNAPSHOT'
 buildscript {
+    ext.kotlin_version = '1.9.22'
     repositories {
         google()
         mavenCentral()
@@ -8,6 +9,7 @@ buildscript {
 
     dependencies {
         classpath('com.android.tools.build:gradle:8.13.0')
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
     }
 }
 rootProject.allprojects {
@@ -15,16 +17,15 @@ rootProject.allprojects {
         google()
         mavenCentral()
     }
-
-    gradle.projectsEvaluated {
-        tasks.withType(JavaCompile) {
-            options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
-        }
-    }
 }
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 36
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
 
     defaultConfig {
         minSdkVersion 16
